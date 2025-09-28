@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giới thiệu bản thân</title>
+</head>
+
+<body>
+
+        <div id="content" style="margin: 50px;">
+            <script>
+                var d = new Date();
+                theDay = d.getDay();
+
+                switch (theDay) {
+                    case 5:
+                        document.write("Friday");
+                        break;
+                    case 6:
+                        document.write("Saturday");
+                        break;
+                    case 0:
+                        document.write("Sunday");
+                        break;
+                    default:
+                        document.write("Chuc dau tuan vui ve!");
+                }    
+            </script>
+        </div>
+
+</body>
+
+</html>

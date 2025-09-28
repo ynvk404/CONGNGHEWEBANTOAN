@@ -1,0 +1,590 @@
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Menu ngang */
+.menu {
+  display: flex;
+  background: #27ae60;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.menu a {
+  flex: 1;
+  text-align: center;
+  padding: 12px 0;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  background: #219150;
+}
+
+/* Nội dung 2 cột */
+.content {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+/* Cột trái */
+.left {
+  flex: 1;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+.left img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+/* Cột giữa (nội dung chính) */
+.center {
+  flex: 3;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+
+/* Menu center */
+.menu-center {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background: #27ae60;
+  border-radius: 8px;
+  padding: 12px;
+  margin: 20px 0;
+}
+
+.menu-center a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.menu-center a:hover {
+  background: #f39c12;
+}
+
+/* Menu center */
+.menu-center {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background: #27ae60;
+  border-radius: 8px;
+  padding: 12px;
+  margin: 20px 0;
+}
+
+.menu-center a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.menu-center a:hover {
+  background: #f39c12;
+}
+
+/* ket thuc layout */
+
+/* style menu center */
+.menu-center {
+    display: flex;
+    justify-content: center;      
+    background-color: #27ae60;    /* xanh lá đậm */
+    padding: 12px 0;
+    border-radius: 8px;           
+    margin: 15px 0;
+}
+
+.menu-center a {
+    color: #fdfefe;               /* chữ trắng */
+    text-decoration: none;        
+    margin: 0 15px;               
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 14px;
+    border-radius: 5px;
+    transition: all 0.3s ease;    
+}
+
+.menu-center a:hover {
+    background-color: #f39c12;    /* vàng cam khi hover */
+    color: #fff;                  
+    transform: translateY(-2px);  
+}
+
+
+/* ket thuc layout */
+/* style menu center */
+.menu-center {
+    display: flex;
+    justify-content: center;      
+    background-color: #27ae60;    /* xanh lá đậm */
+    padding: 12px 0;
+    border-radius: 8px;           
+    margin: 15px 0;
+}
+
+.menu-center a {
+    color: #fdfefe;               /* chữ trắng */
+    text-decoration: none;        
+    margin: 0 15px;               
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 14px;
+    border-radius: 5px;
+    transition: all 0.3s ease;    
+}
+
+.menu-center a:hover {
+    background-color: #f39c12;    /* vàng cam khi hover */
+    color: #fff;                  
+    transform: translateY(-2px);  
+}
+
+/* style content contact.php */
+.contact-info h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 8px;
+}
+
+.contact-info p {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #444;
+}
+
+.contact-info a {
+    color: #007bff;          /* xanh nổi bật */
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+/* style drawtable.php */
+/* Container bao toàn bộ */
+.draw-table-container {
+    background: #fdfdfd;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 700px;
+    margin: 20px auto;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    font-family: Arial, sans-serif;
+}
+
+/* Form */
+.draw-table-container form {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.draw-table-container form .input {
+    margin-bottom: 12px;
+}
+
+.draw-table-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #34495e;
+}
+
+.draw-table-container input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.draw-table-container input[type="submit"] {
+    padding: 10px 16px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #3498db;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.draw-table-container input[type="submit"]:hover {
+    background: #2980b9;
+}
+
+/* Bảng kết quả */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+.table-wrapper table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.table-wrapper td {
+    border: 2px solid #34495e;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.table-wrapper tr:nth-child(even) {
+    background-color: #ecf0f1;
+}
+
+.table-wrapper tr:hover {
+    background-color: #dfe6e9;
+}
+
+/* style loop.php */
+.triangle-container {
+    background: #f9f9f9;       /* nền sáng nhẹ */
+    border: 2px solid #ccc;    /* viền xám nhẹ */
+    border-radius: 10px;       /* bo góc */
+    padding: 20px;
+    max-width: 400px;
+    margin: 20px auto;         /* canh giữa */
+    text-align: center;        /* căn giữa chữ */
+    font-family: Consolas, monospace; /* font code đẹp */
+}
+
+.triangle-container h2 {
+    color: #2c3e50;            /* tiêu đề đậm */
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.triangle-container br {
+    line-height: 1.5;          /* giãn dòng */
+}
+
+/* style calculate1.php */
+.content-calculate1 {
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    background: #fdfdfd;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+.content-calculate1 input[type="number"] {
+    width: 120px;
+    padding: 8px;
+    margin: 5px;
+    border-radius: 6px;
+    border: 1px solid #bbb;
+    text-align: center;
+}
+.content-calculate1 label {
+    margin: 0 8px;
+}
+.content-calculate1 .button {
+    margin-top: 15px;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #3498db;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.content-calculate1 .button:hover {
+    background: #2980b9;
+}
+.content-calculate1 strong {
+    display: block;
+    margin-top: 20px;
+    color: #27ae60;
+}
+
+/* uploadprocess.php */
+.content-upload-form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 25px 30px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+}
+
+.content-upload-form h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.content-upload-form p {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.content-upload-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.content-upload-form input[type="file"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #fff;
+}
+
+.content-upload-form input[type="submit"],
+.content-upload-form input[type="reset"] {
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.content-upload-form input[type="submit"] {
+    background: #4CAF50;
+    color: white;
+}
+
+.content-upload-form input[type="submit"]:hover {
+    background: #45a049;
+}
+
+.content-upload-form input[type="reset"] {
+    background: #f44336;
+    color: white;
+}
+
+.content-upload-form input[type="reset"]:hover {
+    background: #d32f2f;
+}
+
+.content-upload-form ul {
+    margin-top: 20px;
+    padding-left: 20px;
+    color: #333;
+}
+
+.content-upload-form ul li {
+    margin-bottom: 8px;
+}
+
+.content-upload-form ul li a {
+    color: #2196F3;
+    text-decoration: none;
+}
+
+.content-upload-form ul li a:hover {
+    text-decoration: underline;
+}
+
+/* style array.php */
+.content-array {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+}
+
+.content-array h2, 
+.content-array h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.matrix-size-form, 
+.matrix-input-form {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.matrix-size-form label, 
+.matrix-input-form label {
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.matrix-size-form input[type="number"],
+.matrix-input-form input[type="number"] {
+    width: 60px;
+    padding: 6px;
+    margin: 3px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    text-align: center;
+}
+
+button {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 10px auto;
+}
+
+table td {
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+table input[type="number"] {
+    width: 60px;
+}
+
+.result-table td {
+    min-width: 50px;
+    text-align: center;
+    font-weight: bold;
+    background: #e9f5e9;
+    border: 1px solid #b3d9b3;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+}
+/* ====== FORM & TABLE ====== */
+.calc-table {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px 0;
+    border-collapse: collapse;
+}
+
+.calc-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.calc-table label {
+    font-weight: bold;
+    color: #333;
+}
+
+.calc-table input[type="text"],
+.calc-table input[type="number"] {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.2s;
+}
+
+.calc-table input[type="text"]:focus,
+.calc-table input[type="number"]:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+/* ====== BUTTON ====== */
+.button {
+    margin-top: 15px;
+    margin-right: 8px;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.button[type="reset"] {
+    background-color: #dc3545;
+}
+
+.button[type="reset"]:hover {
+    background-color: #a71d2a;
+}
+
+/* ====== RESULT BOX ====== */
+.result-box {
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 8px;
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    max-width: 500px;
+}
+
+.result-box h3 {
+    margin-bottom: 12px;
+    color: #007BFF;
+}
+
+.result-box p {
+    margin: 6px 0;
+    font-size: 15px;
+}

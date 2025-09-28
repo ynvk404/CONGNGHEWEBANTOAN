@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tabs Demo</title>
+  <link rel="stylesheet" href="css/8.1.css">
+</head>
+
+<body>
+  <div class="tab-wrapper">
+    <!-- Tabs -->
+    <div class="tab-container">
+      <button class="tab" data-tab="tab1">Trang ACTVN</button>
+      <button class="tab" data-tab="tab2">Vietnamnet</button>
+      <button class="tab" data-tab="tab3">Thông tin 3</button>
+      <button class="tab" data-tab="tab4">Thông tin 4</button>
+    </div>
+
+    <!-- Nội dung -->
+    <div class="tab-content" id="tab1">
+      <iframe src="https://actvn.edu.vn/"></iframe>
+    </div>
+    <div class="tab-content" id="tab2" hidden>
+      <iframe src="https://vietnamnet.vn/"></iframe>
+    </div>
+    <div class="tab-content" id="tab3" hidden>
+      <p>Nội dung của Tab 3</p>
+    </div>
+    <div class="tab-content" id="tab4" hidden>
+      <p>Nội dung của Tab 4</p>
+    </div>
+  </div>
+
+  <script src="script/8.1.js"></script>
+</body>
+
+</html>

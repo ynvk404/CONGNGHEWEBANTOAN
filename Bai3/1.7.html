@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giới thiệu bản thân</title>
+</head>
+
+<body>
+
+        <div id="content" style="margin: 50px;">
+            <input type="button" onclick="disp_prompt()" value="Display a prompt box" />
+            <script type="text/javascript">
+                function disp_prompt() {
+                    var name = prompt("VUI LONG NHAP TEN CUA BAN", "Nguyen Van Khai");
+                    if (name != null && name != "") {
+                        document.write("XIN CHAO " + name + "! How are you today?");
+                    }
+                }
+            </script>
+        </div>
+</body>
+
+</html>

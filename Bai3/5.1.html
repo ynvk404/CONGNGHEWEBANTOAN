@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giới thiệu bản thân</title>
+    <link rel="stylesheet" href="css/5.1.css">
+    <script src="/BAITAPWEB/Bai3/script/5.1.js"></script>
+</head>
+
+<body>
+    <div class="body">
+        <div class="container" style="margin-left: 220px;">
+            <h2>Đăng Ký Thành Viên</h2>
+
+            <form id="registrationForm">
+
+                <!-- Họ tên -->
+                <div class="form-group">
+                    <label for="fullName">Họ Tên:</label>
+                    <input type="text" id="fullName" name="fullName" required style="background:#d1fae5">
+                    <div class="error hidden" id="err_fullName"></div>
+                </div>
+
+                <!-- Địa chỉ -->
+                <div class="form-group">
+                    <label for="address">Địa chỉ:</label>
+                    <input type="text" id="address" name="address">
+                </div>
+
+                <!-- Giới tính -->
+                <div class="form-group form-sex">
+                    <label for="gender"><strong>Giới Tính:</strong></label>
+                    <input type="radio" id="male" name="gender" value="Nam">
+                    <label for="male">Nam</label>
+                    <input type="radio" id="female" name="gender" value="Nữ">
+                    <label for="female">Nữ</label>
+                </div>
+                <div class="error hidden" id="err_gender"></div>
+                <!-- Ngày sinh -->
+                <div class="form-group">
+                    <label for="birthDate">Ngày Sinh:</label>
+                    <input type="text" id="birthDate" name="birthDate" required style="background:#d1fae5">
+                    <div class="error hidden" id="err_birthDate"></div>
+                </div>
+
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" required style="background:#d1fae5">
+                    <div class="error hidden" id="err_email"></div>
+                </div>
+
+                <!-- Số điện thoại -->
+                <div class="form-group">
+                    <label for="phone">Số Điện Thoại:</label>
+                    <input type="tel" id="phone" name="phone">
+                    <div class="error hidden" id="err_phone"></div>
+                </div>
+
+                <!-- Khóa học đăng ký -->
+                <div class="form-group form-course">
+                    <label for="course"><strong>Khóa Đăng Ký:</strong></label>
+                    <input type="checkbox" id="python" name="course" value="Python">
+                    <label for="python">Python</label>
+                    <input type="checkbox" id="java" name="course" value="Java">
+                    <label for="java">Java</label>
+                    <input type="checkbox" id="php" name="course" value="PHP">
+                    <label for="php">PHP</label>
+                    <br>
+                </div>
+                <div class="error hidden" id="err_course"></div>
+                <!-- Tên đăng nhập -->
+                <div class="form-group">
+                    <label for="username">Tên Sử Dụng:</label>
+                    <input type="text" id="username" name="username" required style="background:#d1fae5">
+                    <div class="error hidden" id="err_username"></div>
+                </div>
+
+                <!-- Mật khẩu -->
+                <div class="form-group">
+                    <label for="password">Mật Khẩu:</label>
+                    <input type="password" id="password" name="password" required style="background:#d1fae5">
+                    <div class="error hidden" id="err_password"></div>
+                </div>
+
+                <!-- Nhập lại mật khẩu -->
+                <div class="form-group">
+                    <label for="confirmPassword">Nhập Lại Mật Khẩu:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required
+                        style="background:#d1fae5">
+                    <div class="error hidden" id="err_confirmPassword"></div>
+                </div>
+
+                <!-- Ghi chú -->
+                <div class="form-group">
+                    <label for="note">Ghi Chú:</label>
+                    <textarea id="note" name="note"></textarea>
+                    <div class="error hidden" id="err_note"></div>
+                </div>
+
+                <!-- Nút submit / reset -->
+                <div class="footer">
+                    <button class="accept" type="button" onclick="submitForm()">Chấp Nhận</button>
+                    <button type="reset" onclick="skipForm()">Bỏ Qua</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

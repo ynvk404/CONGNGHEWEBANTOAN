@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang Kiểm Tra Trắc Nghiệm</title>
+    <link rel="stylesheet" href="css/2.1.css">
+</head>
+
+<body>
+    <div id="noidung" style="margin-left: 220px;">
+        <h1>Trang Kiểm Tra Trắc Nghiệm</h1>
+
+        <form id="baiKiemTra">
+            <!-- Câu hỏi 1 -->
+            <div class="cauhoi">
+                <label>1. Ngôn ngữ Web bạn thích nhất?</label>
+                <div><input type="radio" name="ngonngu" value="HTML"> HTML</div>
+                <div><input type="radio" name="ngonngu" value="CSS"> CSS</div>
+                <div><input type="radio" name="ngonngu" value="JavaScript"> JavaScript</div>
+            </div>
+
+            <!-- Câu hỏi 2 -->
+            <div class="cauhoi">
+                <label>2. Bạn thuộc nhóm tuổi nào?</label>
+                <div><input type="radio" name="tuoi" value="0-30"> 0-30</div>
+                <div><input type="radio" name="tuoi" value="31-60"> 31-60</div>
+                <div><input type="radio" name="tuoi" value="61-100"> 61-100</div>
+            </div>
+
+            <!-- Câu hỏi 3 -->
+            <div class="cauhoi">
+                <label>3. Cơ sở dữ liệu bạn thích dùng?</label>
+                <div><input type="radio" name="csdl" value="MySQL"> MySQL</div>
+                <div><input type="radio" name="csdl" value="PostgreSQL"> PostgreSQL</div>
+                <div><input type="radio" name="csdl" value="MongoDB"> MongoDB</div>
+            </div>
+
+            <!-- Câu hỏi 4 -->
+            <div class="cauhoi">
+                <label>4. Hệ điều hành bạn yêu thích?</label>
+                <div><input type="radio" name="hdh" value="Windows"> Windows</div>
+                <div><input type="radio" name="hdh" value="Linux"> Linux</div>
+                <div><input type="radio" name="hdh" value="macOS"> macOS</div>
+            </div>
+
+            <!-- Câu hỏi 5 -->
+            <div class="cauhoi">
+                <label>5. Bạn thích hướng lập trình nào?</label>
+                <div><input type="radio" name="huonglaptrinh" value="OOP"> OOP</div>
+                <div><input type="radio" name="huonglaptrinh" value="Functional"> Functional</div>
+                <div><input type="radio" name="huonglaptrinh" value="Procedural"> Procedural</div>
+            </div>
+
+            <!-- Câu hỏi 6 -->
+            <div class="cauhoi">
+                <label>6. Bạn có bao nhiêu năm kinh nghiệm?</label>
+                <div><input type="radio" name="kinhnghiem" value="0-1"> 0-1</div>
+                <div><input type="radio" name="kinhnghiem" value="2-5"> 2-5</div>
+                <div><input type="radio" name="kinhnghiem" value="5+"> 5+</div>
+            </div>
+
+            <!-- Câu hỏi 7 -->
+            <div class="cauhoi">
+                <label>7. Framework frontend bạn ưa thích?</label>
+                <div><input type="radio" name="frontend" value="React"> React</div>
+                <div><input type="radio" name="frontend" value="Vue"> Vue</div>
+                <div><input type="radio" name="frontend" value="Angular"> Angular</div>
+            </div>
+
+            <!-- Câu hỏi 8 -->
+            <div class="cauhoi">
+                <label>8. Ngôn ngữ backend bạn thích nhất?</label>
+                <div><input type="radio" name="backend" value="Python"> Python</div>
+                <div><input type="radio" name="backend" value="Java"> Java</div>
+                <div><input type="radio" name="backend" value="PHP"> PHP</div>
+            </div>
+
+            <!-- Câu hỏi 9 -->
+            <div class="cauhoi">
+                <label>9. Bạn thích Cloud hay On-premise?</label>
+                <div><input type="radio" name="trienkhai" value="Cloud"> Cloud</div>
+                <div><input type="radio" name="trienkhai" value="On-premise"> On-premise</div>
+            </div>
+
+            <!-- Câu hỏi 10 -->
+            <div class="cauhoi">
+                <label>10. Hệ thống quản lý phiên bản bạn chọn?</label>
+                <div><input type="radio" name="vcs" value="Git"> Git</div>
+                <div><input type="radio" name="vcs" value="SVN"> SVN</div>
+                <div><input type="radio" name="vcs" value="Mercurial"> Mercurial</div>
+            </div>
+
+            <button type="button" onclick="nopBai('baiKiemTra')">Nộp Bài</button>
+        </form>
+    </div>
+
+    <script>
+        function nopBai(formId) {
+            const form = document.getElementById(formId);
+            const duLieuForm = new FormData(form);
+
+            // Đáp án đúng
+            const dapAnDung = {
+                ngonngu: "JavaScript",
+                tuoi: "31-60",
+                csdl: "PostgreSQL",
+                hdh: "Linux",
+                huonglaptrinh: "OOP",
+                kinhnghiem: "2-5",
+                frontend: "React",
+                backend: "Python",
+                trienkhai: "Cloud",
+                vcs: "Git"
+            };
+
+            let diem = 0;
+            let tong = 10;
+            let chitiet = "";
+
+            for (const key in dapAnDung) {
+                const cauTraLoi = duLieuForm.get(key);
+                if (cauTraLoi === dapAnDung[key]) {
+                    diem++;
+                    chitiet += `${key}: ${cauTraLoi}\n`;
+                } else {
+                    chitiet += `${key}: ${cauTraLoi || "Chưa chọn"} (Đúng: ${dapAnDung[key]})\n`;
+                }
+            }
+
+            alert(`Bạn trả lời đúng ${diem}/${tong} câu.\n\nChi tiết:\n${chitiet}`);
+        }
+    </script>
+
+</body>
+
+</html>

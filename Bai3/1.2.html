@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giới thiệu bản thân</title>
+</head>
+
+<body>
+        <div id="content" style="margin: 50px;">
+            <form name="bai1">
+                <label for="T1">Nhập số:</label>
+                <input type="text" name="T1" id="T1">
+                <input type="button" value="Chạy thử" onclick="chay()">
+            </form>
+            <script type="text/javascript">
+                function chay() {
+                    var a;
+                    a = window.document.bai1.T1.value;
+                    alert(" so ban vua nhap la: " + a);
+                }
+            </script>
+
+        </div>
+
+</body>
+
+</html>

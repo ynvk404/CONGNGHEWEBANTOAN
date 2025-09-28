@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giới thiệu bản thân</title>
+</head>
+
+<body>
+
+        <div id="content" style="margin: 50px;">
+            <input type="button" onclick="disp_confirm()" value="Display a confirm box" />
+            <script type="text/javascript">
+                function disp_confirm() {
+                    var r = confirm("Press a button");
+                    if (r == true) {
+                        document.write("You pressed OK!");
+                    } else {
+                        document.write("You pressed Cancel!");
+                    }
+                }
+
+            </script>
+        </div>
+
+</body>
+
+</html>

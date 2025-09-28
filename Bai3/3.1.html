@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3.1</title>
+    <link rel="stylesheet" href="css/3.1.css">
+</head>
+
+<body>
+    <div id="content" style="margin-left: 300px;">
+        <form id="lopForm" onsubmit="return validateForm()">
+            <h2>Nhập thông tin lớp học</h2>
+            <br>
+            <label for="malop">Mã lớp (6 ký tự):</label><br>
+            <input type="text" id="malop" name="malop" maxlength="6"><br><br>
+            <label for="tenlop">Tên lớp (tối đa 50 ký tự):</label><br>
+            <input type="text" id="tenlop" name="tenlop" maxlength="50"><br><br>
+            <label for="khoahoc">Khóa học (số nguyên):</label><br>
+            <input type="text" id="khoahoc" name="khoahoc"><br><br>
+            <label for="gvcn">Giáo viên chủ nhiệm (tối đa 50 ký tự):</label><br>
+            <input type="text" id="gvcn" name="gvcn" maxlength="50"><br><br>
+            <button type="submit">Lưu</button>
+        </form>
+        <script>
+            function validateForm() {
+                const malop = document.getElementById("malop").value.trim();
+                const tenlop = document.getElementById("tenlop").value.trim();
+                const khoahoc = document.getElementById("khoahoc").value.trim();
+                const gvcn = document.getElementById("gvcn").value.trim();
+                // Kiểm tra MALOP
+                if (malop === "" || malop.length !== 6) {
+                    alert("Mã lớp phải đủ 6 ký tự!");
+                    return false;
+                }
+                // Kiểm tra TENLOP
+                if (tenlop === "" || tenlop.length > 50) {
+                    alert("Tên lớp không được rỗng và tối đa 50 ký tự!");
+                    return false;
+                }
+                // Kiểm tra KHOAHOC
+                if (khoahoc === "" || isNaN(khoahoc) || !Number.isInteger(Number(khoahoc))) {
+                    alert("Khóa học phải là số nguyên!");
+                    return false;
+                }
+                // Kiểm tra GVCN
+                if (gvcn === "" || gvcn.length > 50) {
+                    alert("Tên giáo viên chủ nhiệm không được rỗng và tối đa 50 ký tự!");
+                    return false;
+                }
+                alert("Dữ liệu hợp lệ, form sẽ được gửi!");
+                return true; // cho phép submit
+            }
+        </script>
+    </div>
+
+</body>
+
+</html>

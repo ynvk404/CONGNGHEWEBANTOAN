@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giới thiệu bản thân</title>
+    <style>
+        /* Hiển thị ảnh đầu tiên, ẩn các ảnh còn lại */
+        #image1 {
+            display: block;
+        }
+
+        #image2,
+        #image3,
+        #image4 {
+            display: none;
+        }
+
+        img {
+            width: 200px;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+        <div style="margin: 50px;">
+            <img id="image1" src="images/0.png" alt="image1" />
+            <img id="image2" src="images/1.png" alt="image2" />
+            <img id="image3" src="images/2.png" alt="image3" />
+            <img id="image4" src="images/3.png" alt="image4" />
+            <br />
+            <button onclick="jump()">Jump</button>
+            <button onclick="stop()">Stop</button>
+            <script src="script/11.1.js"></script>
+        </div>
+    </div>
+
+</body>
+
+</html>

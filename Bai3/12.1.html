@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bảng sản phẩm</title>
+    <link rel="stylesheet" href="css/12.1.css">
+</head>
+
+<body>
+
+    <div class="right">
+        <!-- Ô tìm kiếm -->
+        <input type="text" id="searchInput" placeholder="Tìm kiếm sản phẩm" />
+
+        <!-- Nút sắp xếp (nằm dọc) -->
+        <div class="action-bar">
+            <button onclick="sortTable(1)">Sắp xếp theo mã sản phẩm</button>
+            <button onclick="sortTable(2)">Sắp xếp theo tên sản phẩm</button>
+        </div>
+
+        <!-- Bảng sản phẩm -->
+        <table id="productTable">
+            <thead>
+                <tr>
+                    <th>Số thứ tự</th>
+                    <th>Mã sản phẩm</th>
+                    <th>Tên sản phẩm</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>SP166</td>
+                    <td>Máy giặt</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>SP601</td>
+                    <td>Bếp đa năng</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>SP300</td>
+                    <td>Lò sưởi</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>SP004</td>
+                    <td>Điều hòa</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>SP202</td>
+                    <td>Tủ lạnh</td>
+                </tr>
+            </tbody>
+        </table>
+        <script src="script/12.1.js"></script>
+    </div>
+
+</body>
+
+</html>

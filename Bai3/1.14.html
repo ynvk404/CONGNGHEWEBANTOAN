@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giới thiệu bản thân</title>
+</head>
+
+<body onload="startTime()">
+
+    <div id="txt" style="margin: 50px;">
+        <form>
+            <label for="selectPhone">Chọn người:</label>
+            <select id="selectPhone" onchange="disphone(this.value)">
+                <option value="">--Chọn--</option>
+                <option value="lam">Lê Thanh Lâm</option>
+                <option value="duc">Nguyễn Đình Minh Đức</option>
+                <option value="thinh">Trần Văn Thịnh</option>
+                <option value="hien">Đỗ Thế Hiền</option>
+                <option value="daotao">Phòng Đào tạo</option>
+            </select>
+            <input type="text" id="numbox" value="" disabled>
+        </form>
+        <script type="text/javascript">
+            var phone = {
+                "lam": "090540468",
+                "duc": "0905274747",
+                "thinh": "0904909086",
+                "hien": "0905146560",
+                "daotao": "05113519929"
+            };
+
+            function disphone(entry) {
+                var num = phone[entry];
+                document.getElementById("numbox").value = num;
+            }
+
+        </script>
+    </div>
+</body>
+
+</html>

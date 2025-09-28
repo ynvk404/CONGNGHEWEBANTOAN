@@ -1,0 +1,69 @@
+/* Khung chứa */
+#center {
+    display: flex;
+    gap: 20px;
+    align-items: stretch;     /* Đảm bảo các cột cao bằng nhau */
+    min-height: 400px;        /* đặt chiều cao tối thiểu */
+}
+
+/* menu bên trái */
+.menu2 {
+    width: 300px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px 20px 20px;
+}
+
+/* menu item */
+.menu2 ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex: 1;                  /* Cho phép ul giãn full */
+}
+
+.menu2 li {
+    padding: 10px 15px;
+    margin-bottom: 5px;
+    background-color: #eee;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.menu2 li:hover {
+    background-color: #d1f0d1;
+}
+
+.menu2 li.selected {
+    background-color: #4caf50;
+    color: white;
+    font-weight: bold;
+}
+
+/* Khu vực hiển thị */
+.display-area {
+    flex: 1;                  /* Chiếm hết phần còn lại */
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 15px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: flex-start;  /* Nội dung từ trên */
+}
+
+/* Tiêu đề hiển thị */
+#selected-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #047857;
+    border-left: 4px solid #047857;
+    margin: 0;
+    background: #f0fdfa;
+    padding: 6px 10px;
+    border-radius: 4px;
+}

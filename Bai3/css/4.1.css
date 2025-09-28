@@ -1,0 +1,66 @@
+#content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 25px 30px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  font-family: system-ui, Arial, sans-serif;
+  color: #1f2937;
+}
+
+#content h2 {
+  text-align: center;
+  color: #047857;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+/* ================== Form ================== */
+#hosoForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#hosoForm label {
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 4px;
+  display: block;
+}
+
+#hosoForm input[type="text"],
+#hosoForm input[type="date"] {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: all 0.2s ease;
+}
+
+#hosoForm input:focus {
+  outline: none;
+  border-color: #10b981;
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.3);
+}
+
+/* ================== Nút lưu ================== */
+#hosoForm button {
+  background-color: #10b981;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+#hosoForm button:hover {
+  background-color: #047857;
+  transform: translateY(-2px);
+}

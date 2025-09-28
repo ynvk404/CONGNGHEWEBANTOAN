@@ -1,0 +1,4 @@
+2,avatar2.png,NGUYEN VAN KHAI,2004-12-02,Ha Noi,AT19A,ltb@gmail.com,0987654321,Kế toán,7.8,Nhiệt tình
+5,avatar5.jpg,Hoang Van E,2000-12-20,Can Tho,CTK41,hve@gmail.com,0934567890,Kinh tế,7.5,Hoạt bát, Thích thể thao
+7,avatar7.jpg,IU,2003-03-02,Songjeong-dong,Seoul,Hàn Quốc,zzzz,iuoffical@gmail.com,2222,zzzzqe
+8,avatar8.jpg,KHAI,2004-01-01,HA NOI,AT29A,khai1824@gmail.com,0326634929,ATTT,9.8,HOA DONG, THAN THIEN

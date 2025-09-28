@@ -1,0 +1,56 @@
+/* Tổng thể */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f9fafb;
+}
+
+/* Khung tab */
+.tab-wrapper {
+  width: 100%;
+  height: 100vh; /* full màn hình */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hàng tab */
+.tab-container {
+  display: flex;
+  background: #e5e7eb; /* xám nhạt */
+  border-bottom: 2px solid #ccc;
+}
+
+.tab {
+  flex: 1;
+  padding: 12px;
+  cursor: pointer;
+  background: #e5e7eb;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.tab:hover {
+  background: #d1d5db;
+}
+
+/* Tab đang active */
+.tab.active {
+  background: #047857; /* xanh đậm */
+  color: white;
+  font-weight: bold;
+}
+
+/* Nội dung tab */
+.tab-content {
+  flex: 1;
+  padding: 0;
+  background: #fff;
+}
+
+.tab-content iframe {
+  width: 100%;
+  height: calc(100vh - 70px); /* trừ phần chiều cao tabs */
+  border: none;
+}

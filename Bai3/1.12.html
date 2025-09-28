@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giới thiệu bản thân</title>
+</head>
+
+<body onload="startTime()">
+    <p style="margin: 50px;">
+        Thời gian: <span id="txt"></span>
+    </p>
+    <script type="text/javascript">
+        function startTime() {
+            var today = new Date();
+            var h = today.getHours();
+            var m = today.getMinutes();
+            var s = today.getSeconds();
+            m = checkTime(m);
+            s = checkTime(s);
+            document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+            setTimeout(startTime, 500);
+        }
+        function checkTime(i) {
+            if (i < 10) {
+                return "0" + i;
+            } else {
+                return i;
+            }
+        }
+    </script>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+  body {
+      font-family: system-ui, Arial, sans-serif;
+      background: #f0fdf4;
+      margin: 0;
+      padding: 0;
+  }
+
+  .right {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      color: #1f2937;
+  }
+
+  /* ================== Ô tìm kiếm ================== */
+  /* ================== Ô tìm kiếm ================== */
+  #searchInput {
+      width: 100%;
+      padding: 10px 0px;
+      margin-bottom: 15px;
+      border: 1px solid #d1d5db;
+      border-radius: 6px;
+      font-size: 15px;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      /* thêm để tránh lỗi font */
+      color: #333;
+      /* màu chữ rõ ràng */
+      transition: all 0.2s ease;
+  }
+
+  #searchInput::placeholder {
+      color: #9ca3af;
+      /* placeholder nhạt */
+      font-family: 'Segoe UI', Arial, sans-serif;
+  }
+
+  #searchInput:focus {
+      outline: none;
+      border-color: #10b981;
+      box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.3);
+  }
+
+  /* ================== Thanh nút sắp xếp (dọc) ================== */
+  .action-bar {
+      display: block;
+      /* bố cục khối dọc */
+      margin-bottom: 20px;
+  }
+
+  .action-bar button {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+      background-color: #10b981;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      padding: 10px 16px;
+      cursor: pointer;
+      font-size: 15px;
+      font-weight: 500;
+      transition: all 0.25s ease;
+  }
+
+  .action-bar button:hover {
+      background-color: #047857;
+      transform: translateY(-2px);
+  }
+
+  /* ================== Bảng sản phẩm ================== */
+  #productTable {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 15px;
+  }
+
+  #productTable thead {
+      background-color: #10b981;
+      color: #fff;
+  }
+
+  #productTable th,
+  #productTable td {
+      border: 1px solid #d1d5db;
+      padding: 10px 12px;
+      text-align: center;
+  }
+
+  #productTable tbody tr:nth-child(even) {
+      background-color: #f9fafb;
+  }
+
+  #productTable tbody tr:hover {
+      background-color: #ecfdf5;
+  }
